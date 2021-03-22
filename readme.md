@@ -1,4 +1,4 @@
-[![pipeline status](https://gitub.com/khorram-dev/komport/badges/master/komport.svg)](https://gitlab.com/khorram-dev/komport/commits/master)
+[![pipeline status](https://github.com/khorram-dev/komport/blob/master/komport/resource/png/32-apps-komport.png)](https://github.com/khorram-dev/komport)
 
 ## Welcome to _Komport_
 
@@ -19,18 +19,20 @@ This program monitors, displays, logs and analyzes all serial ports, including R
 
 Linux
 
-cmake . -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF\n
-make -j4\n
-make install\n
+cmake . -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF
+
+make -j4
+
+make install
+
 
 Mingw
 
 x86_64-w64-mingw32-cmake . -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF
-x86_64-w64-mingw32-make -j4
-x86_64-w64-mingw32-make install DESTDIR=path-output
 
-package builder for Arch Linux
-makepkg -si
+x86_64-w64-mingw32-make -j4
+
+x86_64-w64-mingw32-make install DESTDIR=path-output
 
 
 #### Requirements for Building:
