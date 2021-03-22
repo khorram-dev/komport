@@ -1,4 +1,4 @@
-[![pipeline status](https://gitub.com/mrkhorram/komport/badges/master/komport.svg)](https://gitlab.com/mrkhorram/komport/commits/master)
+[![pipeline status](https://gitub.com/khorram-dev/komport/badges/master/komport.svg)](https://gitlab.com/khorram-dev/komport/commits/master)
 
 ## Welcome to _Komport_
 
