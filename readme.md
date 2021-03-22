@@ -19,9 +19,9 @@ This program monitors, displays, logs and analyzes all serial ports, including R
 
 Linux
 
-cmake . -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF
-make -j4
-make install
+cmake . -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF\n
+make -j4\n
+make install\n
 
 Mingw
 
