@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+		http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+<kcfgfile name="komportrc"/>
+<group name="general">
+    <entry name="serialportDir" type="String">
+        <label>Folder to save files</label>
+		<default code="true">QStandardPaths::writableLocation(QStandardPaths::ConfigLocation)+QStringLiteral("/serialport")</default>
+    </entry>
+	<entry name="socketDir" type="String">
+		<label>Folder to save files</label>
+		<default code="true">QStandardPaths::writableLocation(QStandardPaths::ConfigLocation)+QStringLiteral("/socket")</default>
+    </entry>
+    <entry name="showSystemTrayIcon" type="Bool">
+            <label>Show a system tray icon</label>
+            <default>false</default>
+    </entry>
+	<entry name="iconColor" type="String">
+            <label>color of the icon</label>
+            <default>#55aa00</default>
+    </entry>
+	<entry name="lineMode" type="int">
+		<label context="@label">State LineMode</label>
+		<whatsthis context="@info:whatsthis">LineMode is to change the type of sending and receiving.</whatsthis>
+		<default>3</default>
+    </entry>
+	<entry name="newLine" type="Bool">
+            <label>State New Line</label>
+            <default>false</default>
+    </entry>
+	<entry name="timeStamp" type="Bool">
+            <label>State Timestamp</label>
+            <default>false</default>
+    </entry>
+</group>
+</kcfg>

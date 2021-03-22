@@ -1,0 +1,35 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="socketActivity" version="1" translationMarkup="true" translationDomain="socket">
+<MenuBar>
+	<Menu name="file"><text>&amp;File</text>
+	<Action name="ac_new" />
+	<Action name="ac_open" />
+	<Separator/>
+  </Menu>
+	<Menu name="Socket"><text>Socket</text>
+		<Action name="ac_connection"/>
+		<Action name="ac_newlineafter"/>
+		<Action name="ac_timestamp"/>
+		<Separator/>
+		<Action name="ac_sendfile"/>
+		<Action name="ac_close"/>
+	</Menu>
+</MenuBar>
+<Menu name="ViewMenu"><text>View</text>
+	<Separator/>
+	<Menu name="ColumnsMenu">
+		<text>Configure Columns</text>
+		<title>Columns</title>
+		<ActionList name="view_columns_list" />
+	</Menu>
+	<Merge/>
+</Menu>
+<ToolBar name="SocketToolBar" noMerge="1"><text>Socket</text>
+	<Action name="ac_connection"/>
+	<Action name="ac_timestamp"/>
+	<Action name="ac_newlineafter"/>
+	<Separator/>
+	<Action name="ac_sendfile"/>
+	<Separator/>
+</ToolBar>
+</kpartgui>

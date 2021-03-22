@@ -1,0 +1,585 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: masoudkh62@gmail.com\n"
+"POT-Creation-Date: 2021-02-06 02:41+0330\n"
+"PO-Revision-Date: 2021-02-06 02:41+0330\n"
+"Last-Translator: masoudkh62@gmail.com\n"
+"Language-Team: English <masoudkh62@gmail.com>\n"
+"Language: Persian\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Komport"
+msgstr "Komport"
+
+msgid ""
+"Sorry, I already gave what help I could.\n"
+"Maybe you should try asking a human?"
+msgstr ""
+"با عرض پوزش ، من در حال حاضر به من کمک کردم.\n"
+"شاید شما باید سعی کنید از یک انسان بپرسید؟"
+
+msgid "Maximize"
+msgstr "به حداکثر رساندن"
+
+msgid "Minimize"
+msgstr "به حداقل برسانید"
+
+msgid "&Quit"
+msgstr "& بستن"
+
+msgid "&Show"
+msgstr "& نمایش"
+
+msgid "komport"
+msgstr "Komport"
+
+msgid "name"
+msgstr "نام"
+
+msgid "MainWindow"
+msgstr "پنجره اصلی"
+
+msgid "&Donation"
+msgstr "& اهدا"
+
+msgid "kde"
+msgstr "kde"
+
+msgid "&KDE Freamwork"
+msgstr "چارچوب KDE"
+
+msgid "about"
+msgstr "درباره"
+
+msgid "Starting minimized"
+msgstr "شروع به حداقل رسیده است"
+
+msgid "Sidebars"
+msgstr "ستون های کناری"
+
+msgid "Serialport"
+msgstr "درگاه سریال"
+
+msgid "&Serialport"
+msgstr "&درگاه سریال"
+
+msgid "Socket"
+msgstr "سوکت"
+
+msgid "&Socket"
+msgstr "&سوکت"
+
+msgid "View List"
+msgstr "مشاهده لیست"
+
+msgid "&New"
+msgstr "&جدید"
+
+msgid "&Open"
+msgstr "&باز کن"
+
+msgid "New"
+msgstr "جدید"
+
+msgid "New Profile"
+msgstr "پروفایل جدید"
+
+msgid "Open Profile"
+msgstr "پروفایل باز کن"
+
+msgid "Open"
+msgstr "باز کن"
+
+msgid "Connect"
+msgstr "متصل شوید"
+
+msgid "RTS"
+msgstr "RTS"
+
+msgid "DTR"
+msgstr "DTR"
+
+msgid "New Line"
+msgstr "خط جدید"
+
+msgid "Timestamp"
+msgstr "مهر زمان"
+
+msgid "Send File"
+msgstr "ارسال فایل"
+
+msgid "Close profile"
+msgstr "بستن نمایه"
+
+msgid "serialport"
+msgstr "درگاه سریال"
+
+msgid "Comport"
+msgstr "Comport"
+
+msgid "Null"
+msgstr "خالی"
+
+msgid "Disconnect"
+msgstr "قطع شدن"
+
+msgid "Welcome to Serialport"
+msgstr "به درگاه سریال خوش آمدید"
+
+msgid "newDevice"
+msgstr "دستگاه جدید"
+
+msgid "None"
+msgstr "هیچ"
+
+msgid "Even"
+msgstr "زوج"
+
+msgid "Odd"
+msgstr "فرد"
+
+msgid "Mark"
+msgstr "علامت"
+
+msgid "Space"
+msgstr "فضا"
+
+msgid "RTS/CTS"
+msgstr "RTS/CTS"
+
+msgid "XON/XOFF"
+msgstr "XON/XOFF"
+
+msgid "Profile Name should not be empty"
+msgstr "نام نمایه نباید خالی باشد"
+
+msgid "The item has been replace."
+msgstr "مورد جایگزین شده است."
+
+msgid "Do you want to save your changes?"
+msgstr "آیا می خواهید تغییرات خود را ذخیره کنید؟"
+
+msgid "FileName"
+msgstr "نام فایل"
+
+msgid "BaudRate"
+msgstr "نرخ باود"
+
+msgid "Parity"
+msgstr "برابری"
+
+msgid "DataBits"
+msgstr "بیت های داده"
+
+msgid "StopBits"
+msgstr "بیت ها را متوقف کنید"
+
+msgid "FlowControl"
+msgstr "کنترل جریان"
+
+msgid "Type"
+msgstr "تایپ کنید"
+
+msgid "IP"
+msgstr "IP"
+
+msgid "PORT"
+msgstr "بندر"
+
+msgid "Open connection file"
+msgstr "پرونده اتصال را باز کنید"
+
+msgid "Configure ..."
+msgstr "پیکربندی ..."
+
+msgid "Make Non-Persistent"
+msgstr "غیر پایدار باشید"
+
+msgid "Make Persistent"
+msgstr "مداوم باش"
+
+msgid "move"
+msgstr "حرکت"
+
+msgid "Move To"
+msgstr "حرکت به"
+
+msgid "go-previous"
+msgstr "برو-قبلی"
+
+msgid "Left Sidebar"
+msgstr "نوار کناری سمت چپ"
+
+msgid "go-next"
+msgstr "برو بعدی"
+
+msgid "Right Sidebar"
+msgstr "نوار کناری سمت راست"
+
+msgid "go-up"
+msgstr "برو بالا"
+
+msgid "Top Sidebar"
+msgstr "نوار کناری بالا"
+
+msgid "go-down"
+msgstr "برو پایین"
+
+msgid "Bottom Sidebar"
+msgstr "نوار کناری پایین"
+
+msgid "Kate hide sidebars notification message"
+msgstr "کیت پیام اعلان ستون های فرعی را پنهان می کند"
+
+msgid "TCP Server"
+msgstr "سرور TCP"
+
+msgid "TCP Client"
+msgstr "مشتری TCP"
+
+msgid "UDP"
+msgstr "UDP"
+
+msgid "Send"
+msgstr "ارسال"
+
+msgid "Printable only"
+msgstr "فقط قابل چاپ"
+
+msgid "Sym"
+msgstr "سیم"
+
+msgid "Dec"
+msgstr "دسامبر"
+
+msgid "Hex"
+msgstr "سحر و جادو"
+
+msgid "Bin"
+msgstr "صبح"
+
+msgid "Clear"
+msgstr "پاک کردن"
+
+msgid "StatusBar"
+msgstr "نوار وضعیت"
+
+msgid "from"
+msgstr "از جانب"
+
+msgid "Error"
+msgstr "خطا"
+
+msgid "Close"
+msgstr "نزدیک"
+
+msgid "socket"
+msgstr "سوکت"
+
+msgid "Stop"
+msgstr "متوقف کردن"
+
+msgid "Client disconnected, listerning to "
+msgstr "مشتری قطع شد ، به آن گوش می داد"
+
+msgid "Start"
+msgstr "شروع کنید"
+
+msgid "Stopped"
+msgstr "متوقف شد"
+
+msgid "Connected with "
+msgstr "مرتبط با"
+
+msgid "Listerning to "
+msgstr "گوش دادن به"
+
+msgid "Disconnected from server"
+msgstr "ارتباط با سرور قطع شد"
+
+msgid "Connection time out"
+msgstr "زمان اتصال قطع شد"
+
+msgid "Ready only Send"
+msgstr "فقط ارسال را بخوانید"
+
+msgid "Failed to listen to: "
+msgstr "گوش دادن انجام نشد:"
+
+msgid "Welcome to Socket"
+msgstr "به سوکت خوش آمدید"
+
+msgid "null"
+msgstr "خالی"
+
+msgid "Save File"
+msgstr "ذخیره پرونده"
+
+msgid "Log (*.txt)"
+msgstr "ورود به سیستم (* .txt)"
+
+msgid "Open File"
+msgstr "باز کردن پرونده"
+
+msgid "Files (*)"
+msgstr "فایل ها (*)"
+
+msgid "send file: "
+msgstr "ارسال فایل:"
+
+msgid "No error occurred."
+msgstr "خطایی رخ نداد."
+
+msgid "An error occurred while attempting to open an non-existing device."
+msgstr "هنگام تلاش برای باز کردن دستگاهی که وجود ندارد خطایی روی داد."
+
+msgid ""
+"An error occurred while attempting to open an already opened device by "
+"another process or a user not having enough permission and credentials to "
+"open."
+msgstr ""
+"هنگام تلاش برای باز کردن دستگاهی که قبلاً باز شده است توسط یک فرآیند دیگر یا"
+" کاربری که اجازه و اعتبار کافی برای باز کردن را ندارد ، خطایی رخ داد."
+
+msgid ""
+"An error occurred while attempting to open an already opened device in this "
+"object."
+msgstr ""
+"هنگام تلاش برای باز کردن دستگاهی که قبلاً باز شده است ، در این شی error "
+"خطایی روی داد."
+
+msgid ""
+"Parity error detected by the hardware while reading data. This value is "
+"obsolete. We strongly advise against using it in new code."
+msgstr ""
+"خطای برابری توسط سخت افزار هنگام خواندن داده ها شناسایی شد. این مقدار منسوخ "
+"شده است. ما اکیداً توصیه می کنیم که از آن در کد جدید استفاده نکنید."
+
+msgid ""
+"Framing error detected by the hardware while reading data. This value is "
+"obsolete. We strongly advise against using it in new code."
+msgstr ""
+"خطای فریم در هنگام خواندن داده توسط سخت افزار شناسایی شد. این مقدار منسوخ "
+"شده است. ما اکیداً توصیه می کنیم که از آن در کد جدید استفاده نکنید."
+
+msgid ""
+"Break condition detected by the hardware on the input line. This value is "
+"obsolete. We strongly advise against using it in new code."
+msgstr ""
+"شرایط شکست توسط سخت افزار روی خط ورودی شناسایی شده است. این مقدار منسوخ شده "
+"است. ما اکیداً توصیه می کنیم که از آن در کد جدید استفاده نکنید."
+
+msgid "An I/O error occurred while writing the data."
+msgstr "هنگام نوشتن داده ها خطای ورودی و خروجی رخ داد."
+
+msgid "An I/O error occurred while reading the data."
+msgstr "هنگام خواندن داده ها خطای I / O روی داد."
+
+msgid ""
+"An I/O error occurred when a resource becomes unavailable, e.g. when the "
+"device is unexpectedly removed from the system."
+msgstr ""
+"وقتی یک منبع غیرقابل دسترسی می شود ، خطای I / O رخ داده است ، به عنوان مثال "
+"وقتی دستگاه به طور غیرمنتظره ای از سیستم خارج شود."
+
+msgid ""
+"The requested device operation is not supported or prohibited by the running"
+" operating system."
+msgstr ""
+"عملکرد دستگاه درخواستی توسط سیستم عامل در حال اجرا پشتیبانی یا ممنوع نیست."
+
+msgid "An unidentified error occurred."
+msgstr "خطایی ناشناخته روی داد."
+
+msgid ""
+"A timeout error occurred. This value was introduced in QtSerialPort 5.2."
+msgstr "خطای وقفه رخ داد. این مقدار در QtSerialPort 5.2 معرفی شده است."
+
+msgid ""
+"This error occurs when an operation is executed that can only be "
+"successfully performed if the device is open. This value was introduced in "
+"QtSerialPort 5.2."
+msgstr ""
+"این خطا هنگام اجرای عملیاتی رخ می دهد که فقط در صورت باز بودن دستگاه با "
+"موفقیت انجام می شود. این مقدار در QtSerialPort 5.2 معرفی شده است."
+
+msgid "komport client"
+msgstr "Komport client"
+
+msgid "Path files:"
+msgstr "پرونده های مسیر:"
+
+msgid "Directory to use as a default save location for all data."
+msgstr "فهرست برای استفاده به عنوان مکان ذخیره پیش فرض برای همه داده ها."
+
+msgid "View Lable:"
+msgstr "مشاهده برچسب:"
+
+msgid "Command"
+msgstr "فرمان دادن"
+
+msgid "Description"
+msgstr "شرح"
+
+msgid "Open Com Port"
+msgstr "پورت کام را باز کنید"
+
+msgid "Profile name:"
+msgstr "نام پروفایل:"
+
+msgid "RS232"
+msgstr "RS232"
+
+msgid "Data bits"
+msgstr "بیت های داده"
+
+msgid "Stop bits"
+msgstr "بیت ها را متوقف کنید"
+
+msgid "Baud rate"
+msgstr "نرخ باود"
+
+msgid "Com Port"
+msgstr "درگاه کام"
+
+msgid "Flow control"
+msgstr "کنترل جریان"
+
+msgid "Network Interface:"
+msgstr "رابط شبکه:"
+
+msgid "IP: "
+msgstr "IP:"
+
+msgid "Refresh"
+msgstr "تازه کردن"
+
+msgid "Port:"
+msgstr "بندر:"
+
+msgid "Ok"
+msgstr "خوب"
+
+msgid "Cancel"
+msgstr "لغو"
+
+msgid "GeneralPref"
+msgstr "GeneralPref"
+
+msgid "General:"
+msgstr "عمومی:"
+
+msgid "Serialport:"
+msgstr "درگاه سریال:"
+
+msgid "Socket:"
+msgstr "سوکت:"
+
+msgid "Whether or not to show system tray popup messages."
+msgstr "نمایش یا عدم نمایش پیام های پنجره سینی سیستم."
+
+msgid "System Tray Icon"
+msgstr "نماد سینی سیستم"
+
+msgid "Icons Color :"
+msgstr "نمادها رنگ:"
+
+msgid "Append socket name"
+msgstr "نام سوکت را اضافه کنید"
+
+msgid "Files:"
+msgstr "فایل ها:"
+
+msgid "Add"
+msgstr "اضافه کردن"
+
+msgid "Rename"
+msgstr "تغییر نام دهید"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "Commmands:"
+msgstr "دستورات:"
+
+msgid "settings"
+msgstr "تنظیمات"
+
+msgid "PrefDialog...."
+msgstr "PrefDialog ...."
+
+msgid "PrefDialog"
+msgstr "PrefDialog"
+
+msgid "size"
+msgstr "اندازه"
+
+msgid "Color scheme : "
+msgstr "طرح رنگی :"
+
+msgid "&Color Scheme"
+msgstr "طرح رنگی"
+
+msgid "ColorScheme"
+msgstr "طرح رنگی"
+
+msgid "General"
+msgstr "عمومی"
+
+msgid "view"
+msgstr "نمایش"
+
+msgid "help"
+msgstr "کمک"
+
+msgid "Folder to save files"
+msgstr "پوشه برای ذخیره فایل ها"
+
+msgid "Show a system tray icon"
+msgstr "نماد گوشه سیستم را نشان دهید"
+
+msgid "color of the icon"
+msgstr "رنگ ایکون"
+
+msgid "State New Line"
+msgstr "وضعیت خط جدید"
+
+msgid "State Timestamp"
+msgstr "وضعیت مهرزمان"
+
+msgid "&File"
+msgstr "&پرونده"
+
+msgid "View"
+msgstr "نمایش"
+
+msgid "Configure Columns"
+msgstr "پیکربندی ستونها"
+
+msgid "Columns"
+msgstr "ستون"
+
+msgid "&View"
+msgstr "&نمایش"
+
+msgid "&Settings"
+msgstr "&تنظیمات"
+
+msgid "&Help"
+msgstr "&کمک"
+
+msgid "Freamwork"
+msgstr "چارچوب"
+
+msgid "Main"
+msgstr "اصلی"
+
+msgid "Define List view"
+msgstr "نمای لیست را تعریف کنید"
+
+msgid "general"
+msgstr "عمومی"

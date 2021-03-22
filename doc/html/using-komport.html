@@ -1,0 +1,61 @@
+<html><head><title>Chapter 3. Using komport (Serialport and Socket)</title><link rel="stylesheet" type="text/css" href="help:/kdoctools5-common/kde-default.css"><link rel="stylesheet" type="text/css" href="help:/kdoctools5-common/kde-docs.css"><link rel="stylesheet" type="text/css" href="help:/kdoctools5-common/kde-localised.css"><meta name="generator" content="DocBook XSL Stylesheets V1.79.2"><meta name="keywords" content="KDE, komport, Network, Serialport, Socket"><link rel="home" href="index.html" title="The komport Handbook"><link rel="up" href="index.html" title="The komport Handbook"><link rel="prev" href="new-komport.html" title="Chapter 2. Create new serialport or socket"><link rel="next" href="komport-listcommand.html" title="Chapter 4. Plugin list command"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="GENERATOR" content="KDE XSL Stylesheet V1.14 using libxslt"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div id="content"><div id="header"><div id="header_content"><div id="header_left"><div id="header_right"><img src="help:/kdoctools5-common/top-kde.jpg" width="36" height="34"> Using <acronym class="acronym">komport</acronym> (Serialport and Socket)</div></div></div></div><div class="navCenter"><table class="navigation"><tr><td class="prevCell"><a accesskey="p" href="new-komport.html">Prev</a></td><td class="upCell"> </td><td class="nextCell"><a accesskey="n" href="komport-listcommand.html">Next</a></td></tr></table></div><div id="contentBody"><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="using-komport"></a>Chapter 3. Using <acronym class="acronym">komport</acronym> (Serialport and Socket)</h1></div></div></div>
+
+<p>
+</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><span class="guilabel">List View:</span></span></dt><dd>
+<p>
+To store the port information and connect to the port.
+</p>
+</dd><dt><span class="term"><span class="guilabel">Editor:</span></span></dt><dd>
+<p>
+Display Input and Outgoing Information.
+</p>
+</dd><dt><span class="term"><span class="guilabel">Send button:</span></span></dt><dd>
+<p>
+Sends the text inside LineEdit.
+</p>
+</dd><dt><span class="term"><span class="guilabel">Line Mode:</span></span></dt><dd>
+<p>
+Specifies the type of sending and receiving information.
+</p>
+</dd><dt><span class="term"><span class="guilabel">Timer:</span></span></dt><dd>
+<p>
+Determine time to send and get every bit based on milliseconds and zero means stop.
+</p>
+</dd><dt><span class="term"><span class="guilabel">RTS:</span></span></dt><dd>
+<p>
+This property holds the state (high or low) of the line signal RTS
+Returns true on success, false otherwise. If the flag is true then the RTS signal is set to high; otherwise low.
+Note: The serial port has to be open before trying to set or get this property; otherwise false is returned and the error code is set to NotOpenError.
+Note: An attempt to control the RTS signal in the HardwareControl mode will fail with error code set to UnsupportedOperationError, because the signal is automatically controlled by the driver.
+</p>
+</dd><dt><span class="term"><span class="guilabel">DTR</span></span></dt><dd>
+<p>
+This property holds the state (high or low) of the line signal DTR
+Returns true on success, false otherwise. If the flag is true then the DTR signal is set to high; otherwise low.
+Note: The serial port has to be open before trying to set or get this property; otherwise false is returned and the error code is set to NotOpenError.
+</p>
+</dd><dt><span class="term"><span class="guilabel">Send File</span></span></dt><dd>
+<p>
+Send a file.
+</p>
+</dd><dt><span class="term"><span class="guilabel">Timestamp</span></span></dt><dd>
+<p>
+Displays the date and time of information in the terminal.
+</p>
+</dd><dt><span class="term"><span class="guilabel">NewLine</span></span></dt><dd>
+<p>
+A \n adds to the end of any data received.
+</p>
+</dd><dt><span class="term"><span class="guilabel">Log File</span></span></dt><dd>
+<p>
+Read the input and output of the port through the terminal buffer and save data in a file.
+</p>
+</dd></dl></div><p>
+</p><div class="screenshot">
+
+<div class="mediaobject"><img src="screenshot_2.png" alt="Screenshot"><div class="caption">
+<p><acronym class="acronym">komport</acronym> connected serialport</p>
+</div></div>
+</div><p>
+</p>
+</div></div><div id="footer"><div class="navCenter"><table class="navigation"><tr><td class="prevCell"><a accesskey="p" href="new-komport.html">Prev</a></td><td class="upCell"><a accesskey="h" href="index.html">Contents</a></td><td class="nextCell"><a accesskey="n" href="komport-listcommand.html">Next</a></td></tr><tr><td class="prevCell">Create new serialport or socket </td><td class="upCell"> </td><td class="nextCell"> Plugin list command</td></tr></table></div><div id="footer_text">Would you like to make a comment or contribute an update to this page?<br>Send feedback to the <a href="mailto:kde-doc-english@kde.org" class="footer_email">KDE Docs Team</a></div></div></div></body></html>

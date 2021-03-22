@@ -1,0 +1,536 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.5-Based Variant V1.1//EN" "dtd/kdedbx45.dtd" [
+  <!ENTITY kappname "&komport;">
+  <!ENTITY komport "<acronym>komport</acronym>">
+  <!ENTITY Komport "<application>Komport</application>">
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % English "INCLUDE">
+]>
+
+<book id="komport" lang="&language;">
+<bookinfo>
+<title>The &komport; Handbook</title>
+
+<authorgroup>
+<author>
+<personname>
+<firstname>Masoud</firstname>
+<surname>Khorram</surname>
+</personname>
+<email>masoudkh62@gmail.com</email>
+</author>
+
+<!-- TRANS:ROLES_OF_TRANSLATORS -->
+</authorgroup>
+
+<copyright>
+<year>2019</year>
+<holder>Masoud Khorram</holder>
+</copyright>
+<legalnotice>&FDLNotice;</legalnotice>
+
+<date>2019-04-17</date>
+<releaseinfo>0.0.1</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para>
+&komport; is a serialport and socket connection application which allows you to connected in network device. It enables you to run multiple komports at the same time and comes with extended features to make it a full-featured client for Socket. 
+</para>
+</abstract>
+
+<!-- This is a set of Keywords for indexing by search engines.
+Please at least include KDE, the KDE package it is in, the name
+ of your application, and a few relevant keywords. -->
+
+<keywordset>
+<keyword>KDE</keyword>
+<keyword>komport</keyword>
+<keyword>Network</keyword>
+<keyword>Serialport</keyword>
+<keyword>Socket</keyword>
+</keywordset>
+
+</bookinfo>
+
+<!-- 
+in kde 4 no application any more.
+
+konqueror/dolphin/gwenview enter "remote:/" in location bar or click Network in Places
+"Add Network Folder" click opens the wizard
+-->
+
+<chapter id="introduction">
+<title>Introduction</title>
+
+<para>
+<itemizedlist>
+<title>&komport; has two activites for connect to ports:</title>
+<listitem><para>serialport</para></listitem>
+<listitem><para>socket</para></listitem>
+</itemizedlist>
+</para>
+<itemizedlist>
+<title>Features</title>
+<listitem><para>Serial port connections</para></listitem>
+<listitem><para>TCP/IP connections</para></listitem>
+<listitem><para>Log replaying</para></listitem>
+<listitem><para>File transfer protocols</para></listitem>
+<listitem><para>UTF-8 character encoding</para></listitem>
+</itemizedlist>
+<screenshot>
+<screeninfo>Here's a screenshot of &komport;</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="screenshot_1.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase>Screenshot</phrase>
+</textobject>
+<caption>
+<para>Komport main window</para>
+</caption>
+</mediaobject>
+</screenshot>
+</chapter>
+
+
+<chapter id="new-komport">
+<title>Create new serialport or socket</title>
+
+<para>
+<variablelist>
+<varlistentry>
+<term><guilabel>New Serialport:</guilabel></term>
+<listitem>
+<para>
+Create a new file for the serialport
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+<screenshot>
+<screeninfo>Here's a screenshot of &komport;</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="screenshot_9.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase>Screenshot</phrase>
+</textobject>
+<caption>
+<para>Create new file serialport</para>
+</caption>
+</mediaobject>
+</screenshot>
+
+<variablelist>
+<varlistentry>
+<term><guilabel>Profile name:</guilabel></term>
+<listitem>
+<para>
+Name for serialport file.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Com Port:</guilabel></term>
+<listitem>
+<para>
+The serial port for communication should be specified.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Baud rate:</guilabel></term>
+<listitem>
+<para>
+The baud rate is the rate at which information is transferred in a communication channel. Baud rate is commonly used when discussing electronics that use serial communication. In the serial port context, "9600 baud" means that the serial port is capable of transferring a maximum of 9600 bits per second.
+At baud rates above 76,800, the cable length will need to be reduced. The higher the baud rate, the more sensitive the cable becomes to the quality of installation, due to how much of the wire is untwisted around each device.
+Data Bus Devices and Baud Rate
+The BACnet MS/TP data bus supports up to 255 devices:
+Up to 128 (0 to 127) devices that are Masters (that can initiate communication)
+Up to 128 (128 to 255) devices that are Slaves (cannot initiate communication)
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Parity:</guilabel></term>
+<listitem>
+<para>
+Parity is a method of detecting errors in transmission. When parity is used with a serial port, an extra data bit is sent with each data character, arranged so that the number of 1 bits in each character, including the parity bit, is always odd or always even. If a byte is received with the wrong number of 1s, then it must have been corrupted. However, an even number of errors can pass the parity check.
+
+Electromechanical teleprinters were arranged to print a special character when received data contained a parity error, to allow detection of messages damaged by line noise. A single parity bit does not allow implementation of error correction on each character, and communication protocols working over serial data links will have higher-level mechanisms to ensure data validity and request retransmission of data that has been incorrectly received.
+
+The parity bit in each character can be set to one of the following:
+
+    None (N) means that no parity bit is sent at all.
+    Odd (O) means that parity bit is set so that the number of "logical ones" must be odd.
+    Even (E) means that parity bit is set so that the number of "logical ones" must be even.
+    Mark (M) parity means that the parity bit is always set to the mark signal condition (logical 1).
+    Space (S) parity always sends the parity bit in the space signal condition (logical 0).
+
+Aside from uncommon applications that use the last bit (usually the 9th) for some form of addressing or special signaling, mark or space parity is uncommon, as it adds no error detection information.
+
+Odd parity is more useful than even parity since it ensures that at least one state transition occurs in each character, which makes it more reliable at detecting errors like those that could be caused by serial port speed mismatches. The most common parity setting, however, is "none", with error detection handled by a communication protocol. 
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Data bits</guilabel></term>
+<listitem>
+<para>
+The number of data bits in each character can be 5 (for Baudot code), 6 (rarely used), 7 (for true ASCII), 8 (for most kinds of data, as this size matches the size of a byte), or 9 (rarely used). 8 data bits are almost universally used in newer applications. 5 or 7 bits generally only make sense with older equipment such as teleprinters.
+
+Most serial communications designs send the data bits within each byte LSB (least significant bit) first. This standard is also referred to as "little endian."
+
+Also possible, but rarely used, is "big endian" or MSB (most significant bit) first; this was used, for example, by the IBM 2741 printing terminal.
+
+The order of bits is not usually configurable within the serial port interface, but is defined by the host system. To communicate with systems that require a different bit ordering than the local default, local software can re-order the bits within each byte just before sending and just after receiving.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Stop bits:</guilabel></term>
+<listitem>
+<para>
+Stop bits sent at the end of every character allow the receiving signal hardware to detect the end of a character and to resynchronise with the character stream. Electronic devices usually use one stop bit. If slow electromechanical teleprinters are used, one-and-one half or two stop bits are required. 
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Flow control:</guilabel></term>
+<listitem>
+<para>
+Flow control is used in circumstances where a transmitter might be able to send data faster than the receiver is able to process it. To cope with this, serial lines often incorporate a handshaking method, usually distinguished between hardware and software handshaking.
+
+Hardware handshaking is done with extra signals, often the RS-232 RTS/CTS or DTR/DSR signal circuits. Generally, the RTS and CTS are turned off and on from alternate ends to control data flow, for instance when a buffer is almost full. DTR and DSR are usually on all the time and, per the RS-232 standard and its successors, are used to signal from each end that the other equipment is actually present and powered-up. However, manufacturers have over the years built many devices that implemented non-standard variations on the standard, for example, printers that use DTR as flow control.
+
+Software handshaking is done for example with ASCII control characters XON/XOFF to control the flow of data. The XON and XOFF characters are sent by the receiver to the sender to control when the sender will send data, that is, these characters go in the opposite direction to the data being sent. The circuit starts in the "sending allowed" state. When the receiver's buffers approach capacity, the receiver sends the XOFF character to tell the sender to stop sending data. Later, after the receiver has emptied its buffers, it sends an XON character to tell the sender to resume transmission. It is an example of in-band signaling, where control information is sent over the same channel as its data.
+
+The advantage of hardware handshaking is that it can be extremely fast; it doesn't impose any particular meaning such as ASCII on the transferred data; and it is stateless. Its disadvantage is that it requires more hardware and cabling, and these must be compatible at both ends.
+
+The advantage of software handshaking is that it can be done with absent or incompatible hardware handshaking circuits and cabling. The disadvantage, common to all in-band control signaling, is that it introduces complexities in ensuring that a) control messages get through even when data messages are blocked, and b) data can never be mistaken for control signals. The former is normally dealt with by the operating system or device driver; the latter normally by ensuring that control codes are "escaped" (such as in the Kermit protocol) or omitted by design (such as in ANSI terminal control).
+
+If no handshaking is employed, an overrun receiver might simply fail to receive data from the transmitter. Approaches for preventing this include reducing the speed of the connection so that the receiver can always keep up; increasing the size of buffers so it can keep up averaged over a longer time; using delays after time-consuming operations (e.g. in termcap) or employing a mechanism to resend data which has been corrupted (e.g. TCP).
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Send Break</guilabel></term>
+<listitem>
+<para>
+To ensure content send text data that should have a Break or \r\n
+</para>
+</listitem>
+</varlistentry>
+
+<varlistentry>
+<term><guilabel>New Socket:</guilabel></term>
+<listitem>
+<para>
+Create a new file for the socket
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+<screenshot>
+<screeninfo>Here's a screenshot of &komport;</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="screenshot_10.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase>Screenshot</phrase>
+</textobject>
+<caption>
+<para>&komport; connected socket</para>
+</caption>
+</mediaobject>
+</screenshot>
+<variablelist>
+<varlistentry>
+<term><guilabel>Profile name:</guilabel></term>
+<listitem>
+<para>
+Name for socket file.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>IP:</guilabel></term>
+<listitem>
+<para>
+This section is selected based on the type of network of pre-made.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Type Network:</guilabel></term>
+<listitem>
+<para>
+There are three types of network:
+TCP Client
+TCP Server
+Udp
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Refresh:</guilabel></term>
+<listitem>
+<para>
+Reloading networks on operating system.
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</para>
+</chapter>
+
+
+
+
+
+
+
+
+<chapter id="using-komport">
+<title>Using &komport; (Serialport and Socket)</title>
+<para>
+<variablelist>
+<varlistentry>
+<term><guilabel>List View:</guilabel></term>
+<listitem>
+<para>
+To store the port information and connect to the port.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Editor:</guilabel></term>
+<listitem>
+<para>
+Display Input and Outgoing Information.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Send button:</guilabel></term>
+<listitem>
+<para>
+Sends the text inside LineEdit.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Line Mode:</guilabel></term>
+<listitem>
+<para>
+Specifies the type of sending and receiving information.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Timer:</guilabel></term>
+<listitem>
+<para>
+Determine time to send and get every bit based on milliseconds and zero means stop.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>RTS:</guilabel></term>
+<listitem>
+<para>
+This property holds the state (high or low) of the line signal RTS
+Returns true on success, false otherwise. If the flag is true then the RTS signal is set to high; otherwise low.
+Note: The serial port has to be open before trying to set or get this property; otherwise false is returned and the error code is set to NotOpenError.
+Note: An attempt to control the RTS signal in the HardwareControl mode will fail with error code set to UnsupportedOperationError, because the signal is automatically controlled by the driver.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>DTR</guilabel></term>
+<listitem>
+<para>
+This property holds the state (high or low) of the line signal DTR
+Returns true on success, false otherwise. If the flag is true then the DTR signal is set to high; otherwise low.
+Note: The serial port has to be open before trying to set or get this property; otherwise false is returned and the error code is set to NotOpenError.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Send File</guilabel></term>
+<listitem>
+<para>
+Send a file.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Timestamp</guilabel></term>
+<listitem>
+<para>
+Displays the date and time of information in the terminal.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>NewLine</guilabel></term>
+<listitem>
+<para>
+A \n adds to the end of any data received.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Log File</guilabel></term>
+<listitem>
+<para>
+Read the input and output of the port through the terminal buffer and save data in a file.
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+<screenshot>
+<screeninfo>Here's a screenshot of &komport;</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="screenshot_2.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase>Screenshot</phrase>
+</textobject>
+<caption>
+<para>&komport; connected serialport</para>
+</caption>
+</mediaobject>
+</screenshot>
+</para>
+</chapter>
+
+<chapter id="komport-listcommand">
+<title>Plugin list command</title>
+
+<para>
+
+
+<variablelist>
+<varlistentry>
+<term><guilabel>list command:</guilabel></term>
+<listitem>
+<para>
+With the ListCommand plugin, you can save commands based on the command name and time and description in a list.
+</para>
+<para>
+Create file group
+</para>
+<para>
+Rename the file
+</para>
+<para>
+Delete file name
+</para>
+<para>
+Re-loading the list of orders
+</para>
+<para>
+Add command
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+<screenshot>
+<screeninfo>Here's a screenshot of &komport;</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="screenshot_3.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase>Screenshot</phrase>
+</textobject>
+<caption>
+<para>The plugin list command with the komport socket</para>
+</caption>
+</mediaobject>
+</screenshot>
+</para>
+<para>
+<variablelist>
+<varlistentry>
+<term><guilabel>Path file:</guilabel></term>
+<listitem>
+<para>
+Save file location.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>View Table:</guilabel></term>
+<listitem>
+<para>
+Show based on which stored content.
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guilabel>Define the number:</guilabel></term>
+<listitem>
+<para>
+Determine the number of characters in the list in the list.
+More than the specified number is replaced with 3 points.
+</para>
+</listitem>
+</varlistentry>
+
+</variablelist>
+<screenshot>
+<screeninfo>Here's a screenshot of &komport;</screeninfo>
+<mediaobject>
+<imageobject>
+<imagedata fileref="screenshot_7.png" format="PNG"/>
+</imageobject>
+<textobject>
+<phrase>Screenshot</phrase>
+</textobject>
+<caption>
+<para>The plugin list command with the komport socket</para>
+</caption>
+</mediaobject>
+</screenshot>
+</para>
+</chapter>
+
+<chapter id="credits">
+
+<title>Credits and License</title>
+
+<para>
+&komport;
+</para>
+<para>Documentation copyright &copy; 2019 Masoud Khorram <email>masoudkh62@gmail.com </email> </para>
+
+<!-- TRANS:CREDIT_FOR_TRANSLATORS -->
+
+&underFDL;               <!-- FDL: do not remove -->
+&underGPL;
+
+</chapter>
+
+&documentation.index;
+</book>
+
+<!--
+Local Variables:
+mode: xml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+
+vim:tabstop=2:shiftwidth=2:expandtab
+kate: space-indent on; indent-width 2; tab-width 2; indent-mode none;
+-->

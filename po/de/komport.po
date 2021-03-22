@@ -1,0 +1,181 @@
+#
+# Masoud Khorram <masoudkh62@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: masoudkh62@gmail.com\n"
+"POT-Creation-Date: 2021-02-02 21:57+0330\n"
+"PO-Revision-Date: 2021-02-03 01:09+0330\n"
+"Last-Translator: Masoud Khorram <masoudkh62@gmail.com>\n"
+"Language-Team: English <kde-i18n-doc@kde.org>\n"
+"Language: German\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 20.12.1\n"
+
+msgid "Folder to save files"
+msgstr "Ordner zum Speichern von Dateien"
+
+msgid "Show a system tray icon"
+msgstr "Zeigen Sie ein Taskleistensymbol an"
+
+msgid "color of the icon"
+msgstr "Farbe des Symbols"
+
+msgid "Append socket name"
+msgstr "Socket-Namen anhängen"
+
+msgid "State New Line"
+msgstr "Neue Zeile angeben"
+
+msgid "State Timestamp"
+msgstr "Status Zeitstempel"
+
+msgid "&File"
+msgstr "&Datei"
+
+msgid "Socket"
+msgstr "Steckdose"
+
+msgid "View"
+msgstr "Aussicht"
+
+msgid "Configure Columns"
+msgstr "Spalten konfigurieren"
+
+msgid "Columns"
+msgstr "Säulen"
+
+msgid "Serialport"
+msgstr "Serielle Schnittstelle"
+
+msgid "Open Com Port"
+msgstr "Öffnen Sie den Com-Port"
+
+msgid "Profile name:"
+msgstr "Profilname:"
+
+msgid "RS232"
+msgstr "RS232"
+
+msgid "Data bits"
+msgstr "Daten Bits"
+
+msgid "Stop bits"
+msgstr "Stopp-Bits"
+
+msgid "Baud rate"
+msgstr "Baudrate"
+
+msgid "Parity"
+msgstr "Parität"
+
+msgid "Com Port"
+msgstr "Com Port"
+
+msgid "Flow control"
+msgstr "Ablaufsteuerung"
+
+msgid "Network Interface:"
+msgstr "Netzwerkschnittstelle:"
+
+msgid "IP: "
+msgstr "IP:"
+
+msgid "Refresh"
+msgstr "Aktualisierung"
+
+msgid "TCP Client"
+msgstr "TCP-Client"
+
+msgid "TCP Server"
+msgstr "TCP-Server"
+
+msgid "UDP"
+msgstr "UDP"
+
+msgid "Port:"
+msgstr "Hafen:"
+
+msgid "Ok"
+msgstr "OK"
+
+msgid "Cancel"
+msgstr "Stornieren"
+
+msgid "&View"
+msgstr "&Aussicht"
+
+msgid "&Settings"
+msgstr "&Die Einstellungen"
+
+msgid "&Help"
+msgstr "&Hilfe"
+
+msgid "Freamwork"
+msgstr "Rahmen"
+
+msgid "Main"
+msgstr "Main"
+
+msgid "General:"
+msgstr "Allgemeines:"
+
+msgid "Serialport:"
+msgstr "Serielle Schnittstelle:"
+
+msgid "Directory to use as a default save location for all data."
+msgstr "Verzeichnis, das als Standardspeicherort für alle Daten verwendet werden soll."
+
+msgid "Socket:"
+msgstr "Socket:"
+
+msgid "Whether or not to show system tray popup messages."
+msgstr "Gibt an, ob Popup-Meldungen in der Taskleiste angezeigt werden sollen."
+
+msgid "System Tray Icon"
+msgstr "Symbol in der Taskleiste"
+
+msgid "Color icons:"
+msgstr "Farbsymbole:"
+
+msgid "New Line"
+msgstr "Neue Zeile"
+
+msgid "Timestamp"
+msgstr "Zeitstempel"
+
+msgid "Path files:"
+msgstr "Pfaddateien:"
+
+msgid "View Lable:"
+msgstr "Beschriftung anzeigen:"
+
+msgid "Command"
+msgstr "Befehl"
+
+msgid "Description"
+msgstr "Beschreibung"
+
+msgid "guiCommand"
+msgstr "guiCommand"
+
+msgid "Files:"
+msgstr "Dateien:"
+
+msgid "Add"
+msgstr "Hinzufügen"
+
+msgid "Rename"
+msgstr "Umbenennen"
+
+msgid "Delete"
+msgstr "Löschen"
+
+msgid "Commmands:"
+msgstr "Befehle:"
+
+msgid "Define List view"
+msgstr "Listenansicht definieren"

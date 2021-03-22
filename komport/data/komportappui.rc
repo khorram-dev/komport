@@ -1,0 +1,32 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<gui name="komport" version="1" translationMarkup="true" translationDomain="komport">
+<MenuBar>
+	<Menu name="file"><text>&amp;File</text>
+		<Merge/>
+	</Menu>
+	<Menu name="view"><text>&amp;View</text>
+		<Merge/>
+		<Separator/>
+		<ActionList name="activities_list" />
+	</Menu>
+	<Merge/>
+	<Separator/>
+    <Menu name="settings"><text>&amp;Settings</text>
+		<Action name="colorscheme_menu"/>
+	</Menu>
+	<Menu name="help"><text>&amp;Help</text>
+		<Action name="ac_handbook"/>
+		<Action name="ac_komport_donation"/>
+		<Menu name="about_kde"><text>Freamwork</text>
+			<Action name="ac_aboutkde"/>
+			<Action name="ac_donation"/>
+		</Menu>
+	</Menu>
+</MenuBar>
+
+<ToolBar name="mainToolBar" noMerge="1"><text>Main</text>
+	<ActionList name="activities_list" />
+<Separator/>
+<!-- 	<ActionList name="activities_list" /> -->
+</ToolBar>
+</gui>

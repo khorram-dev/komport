@@ -1,0 +1,116 @@
+<html><head><title>Chapter 2. Create new serialport or socket</title><link rel="stylesheet" type="text/css" href="help:/kdoctools5-common/kde-default.css"><link rel="stylesheet" type="text/css" href="help:/kdoctools5-common/kde-docs.css"><link rel="stylesheet" type="text/css" href="help:/kdoctools5-common/kde-localised.css"><meta name="generator" content="DocBook XSL Stylesheets V1.79.2"><meta name="keywords" content="KDE, komport, Network, Serialport, Socket"><link rel="home" href="index.html" title="The komport Handbook"><link rel="up" href="index.html" title="The komport Handbook"><link rel="prev" href="introduction.html" title="Chapter 1. Introduction"><link rel="next" href="using-komport.html" title="Chapter 3. Using komport (Serialport and Socket)"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="GENERATOR" content="KDE XSL Stylesheet V1.14 using libxslt"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div id="content"><div id="header"><div id="header_content"><div id="header_left"><div id="header_right"><img src="help:/kdoctools5-common/top-kde.jpg" width="36" height="34"> Create new serialport or socket</div></div></div></div><div class="navCenter"><table class="navigation"><tr><td class="prevCell"><a accesskey="p" href="introduction.html">Prev</a></td><td class="upCell"> </td><td class="nextCell"><a accesskey="n" href="using-komport.html">Next</a></td></tr></table></div><div id="contentBody"><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="new-komport"></a>Chapter 2. Create new serialport or socket</h1></div></div></div>
+
+
+<p>
+</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><span class="guilabel">New Serialport:</span></span></dt><dd>
+<p>
+Create a new file for the serialport
+</p>
+</dd></dl></div><p>
+</p><div class="screenshot">
+
+<div class="mediaobject"><img src="screenshot_9.png" alt="Screenshot"><div class="caption">
+<p>Create new file serialport</p>
+</div></div>
+</div><p>
+
+</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><span class="guilabel">Profile name:</span></span></dt><dd>
+<p>
+Name for serialport file.
+</p>
+</dd><dt><span class="term"><span class="guilabel">Com Port:</span></span></dt><dd>
+<p>
+The serial port for communication should be specified.
+</p>
+</dd><dt><span class="term"><span class="guilabel">Baud rate:</span></span></dt><dd>
+<p>
+The baud rate is the rate at which information is transferred in a communication channel. Baud rate is commonly used when discussing electronics that use serial communication. In the serial port context, "9600 baud" means that the serial port is capable of transferring a maximum of 9600 bits per second.
+At baud rates above 76,800, the cable length will need to be reduced. The higher the baud rate, the more sensitive the cable becomes to the quality of installation, due to how much of the wire is untwisted around each device.
+Data Bus Devices and Baud Rate
+The BACnet MS/TP data bus supports up to 255 devices:
+Up to 128 (0 to 127) devices that are Masters (that can initiate communication)
+Up to 128 (128 to 255) devices that are Slaves (cannot initiate communication)
+</p>
+</dd><dt><span class="term"><span class="guilabel">Parity:</span></span></dt><dd>
+<p>
+Parity is a method of detecting errors in transmission. When parity is used with a serial port, an extra data bit is sent with each data character, arranged so that the number of 1 bits in each character, including the parity bit, is always odd or always even. If a byte is received with the wrong number of 1s, then it must have been corrupted. However, an even number of errors can pass the parity check.
+
+Electromechanical teleprinters were arranged to print a special character when received data contained a parity error, to allow detection of messages damaged by line noise. A single parity bit does not allow implementation of error correction on each character, and communication protocols working over serial data links will have higher-level mechanisms to ensure data validity and request retransmission of data that has been incorrectly received.
+
+The parity bit in each character can be set to one of the following:
+
+    None (N) means that no parity bit is sent at all.
+    Odd (O) means that parity bit is set so that the number of "logical ones" must be odd.
+    Even (E) means that parity bit is set so that the number of "logical ones" must be even.
+    Mark (M) parity means that the parity bit is always set to the mark signal condition (logical 1).
+    Space (S) parity always sends the parity bit in the space signal condition (logical 0).
+
+Aside from uncommon applications that use the last bit (usually the 9th) for some form of addressing or special signaling, mark or space parity is uncommon, as it adds no error detection information.
+
+Odd parity is more useful than even parity since it ensures that at least one state transition occurs in each character, which makes it more reliable at detecting errors like those that could be caused by serial port speed mismatches. The most common parity setting, however, is "none", with error detection handled by a communication protocol. 
+</p>
+</dd><dt><span class="term"><span class="guilabel">Data bits</span></span></dt><dd>
+<p>
+The number of data bits in each character can be 5 (for Baudot code), 6 (rarely used), 7 (for true ASCII), 8 (for most kinds of data, as this size matches the size of a byte), or 9 (rarely used). 8 data bits are almost universally used in newer applications. 5 or 7 bits generally only make sense with older equipment such as teleprinters.
+
+Most serial communications designs send the data bits within each byte LSB (least significant bit) first. This standard is also referred to as "little endian."
+
+Also possible, but rarely used, is "big endian" or MSB (most significant bit) first; this was used, for example, by the IBM 2741 printing terminal.
+
+The order of bits is not usually configurable within the serial port interface, but is defined by the host system. To communicate with systems that require a different bit ordering than the local default, local software can re-order the bits within each byte just before sending and just after receiving.
+</p>
+</dd><dt><span class="term"><span class="guilabel">Stop bits:</span></span></dt><dd>
+<p>
+Stop bits sent at the end of every character allow the receiving signal hardware to detect the end of a character and to resynchronise with the character stream. Electronic devices usually use one stop bit. If slow electromechanical teleprinters are used, one-and-one half or two stop bits are required. 
+</p>
+</dd><dt><span class="term"><span class="guilabel">Flow control:</span></span></dt><dd>
+<p>
+Flow control is used in circumstances where a transmitter might be able to send data faster than the receiver is able to process it. To cope with this, serial lines often incorporate a handshaking method, usually distinguished between hardware and software handshaking.
+
+Hardware handshaking is done with extra signals, often the RS-232 RTS/CTS or DTR/DSR signal circuits. Generally, the RTS and CTS are turned off and on from alternate ends to control data flow, for instance when a buffer is almost full. DTR and DSR are usually on all the time and, per the RS-232 standard and its successors, are used to signal from each end that the other equipment is actually present and powered-up. However, manufacturers have over the years built many devices that implemented non-standard variations on the standard, for example, printers that use DTR as flow control.
+
+Software handshaking is done for example with ASCII control characters XON/XOFF to control the flow of data. The XON and XOFF characters are sent by the receiver to the sender to control when the sender will send data, that is, these characters go in the opposite direction to the data being sent. The circuit starts in the "sending allowed" state. When the receiver's buffers approach capacity, the receiver sends the XOFF character to tell the sender to stop sending data. Later, after the receiver has emptied its buffers, it sends an XON character to tell the sender to resume transmission. It is an example of in-band signaling, where control information is sent over the same channel as its data.
+
+The advantage of hardware handshaking is that it can be extremely fast; it doesn't impose any particular meaning such as ASCII on the transferred data; and it is stateless. Its disadvantage is that it requires more hardware and cabling, and these must be compatible at both ends.
+
+The advantage of software handshaking is that it can be done with absent or incompatible hardware handshaking circuits and cabling. The disadvantage, common to all in-band control signaling, is that it introduces complexities in ensuring that a) control messages get through even when data messages are blocked, and b) data can never be mistaken for control signals. The former is normally dealt with by the operating system or device driver; the latter normally by ensuring that control codes are "escaped" (such as in the Kermit protocol) or omitted by design (such as in ANSI terminal control).
+
+If no handshaking is employed, an overrun receiver might simply fail to receive data from the transmitter. Approaches for preventing this include reducing the speed of the connection so that the receiver can always keep up; increasing the size of buffers so it can keep up averaged over a longer time; using delays after time-consuming operations (e.g. in termcap) or employing a mechanism to resend data which has been corrupted (e.g. TCP).
+</p>
+</dd><dt><span class="term"><span class="guilabel">Send Break</span></span></dt><dd>
+<p>
+To ensure content send text data that should have a Break or \r\n
+</p>
+</dd><dt><span class="term"><span class="guilabel">New Socket:</span></span></dt><dd>
+<p>
+Create a new file for the socket
+</p>
+</dd></dl></div><p>
+</p><div class="screenshot">
+
+<div class="mediaobject"><img src="screenshot_10.png" alt="Screenshot"><div class="caption">
+<p><acronym class="acronym">komport</acronym> connected socket</p>
+</div></div>
+</div><p>
+</p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><span class="guilabel">Profile name:</span></span></dt><dd>
+<p>
+Name for socket file.
+</p>
+</dd><dt><span class="term"><span class="guilabel">IP:</span></span></dt><dd>
+<p>
+This section is selected based on the type of network of pre-made.
+</p>
+</dd><dt><span class="term"><span class="guilabel">Type Network:</span></span></dt><dd>
+<p>
+There are three types of network:
+TCP Client
+TCP Server
+Udp
+</p>
+</dd><dt><span class="term"><span class="guilabel">Refresh:</span></span></dt><dd>
+<p>
+Reloading networks on operating system.
+</p>
+</dd></dl></div><p>
+</p>
+</div></div><div id="footer"><div class="navCenter"><table class="navigation"><tr><td class="prevCell"><a accesskey="p" href="introduction.html">Prev</a></td><td class="upCell"><a accesskey="h" href="index.html">Contents</a></td><td class="nextCell"><a accesskey="n" href="using-komport.html">Next</a></td></tr><tr><td class="prevCell">Introduction </td><td class="upCell"> </td><td class="nextCell"> Using <acronym class="acronym">komport</acronym> (Serialport and Socket)</td></tr></table></div><div id="footer_text">Would you like to make a comment or contribute an update to this page?<br>Send feedback to the <a href="mailto:kde-doc-english@kde.org" class="footer_email">KDE Docs Team</a></div></div></div></body></html>

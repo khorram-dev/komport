@@ -1,0 +1,9 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/kxmlgui5/komport">
+        <file>komportappui.rc</file>
+    </qresource>
+    <qresource prefix="/komport">
+        <file alias="komport.svg">../resource/png/sc-apps-komport.svg</file>
+    </qresource>
+</RCC>

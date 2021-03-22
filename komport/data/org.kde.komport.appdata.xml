@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component type="desktop">
+  <id>org.kde.komport.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-2.0+</project_license>
+  <name>Komport</name>
+  <name xml:lang="de">Komport</name>
+  <name xml:lang="en-GB">Komport</name>
+  <name xml:lang="fa">Komport</name>
+  <name xml:lang="fr">Komport</name>
+  <summary>Japanese Reference and Study Tool</summary>
+  <summary xml:lang="de">Referenz- und Studienprogramm für Japanisch</summary>
+  <summary xml:lang="en-GB">Japanese Reference and Study Tool</summary>
+  <summary xml:lang="fa">Japanin opiskelutyökalu</summary>
+  <summary xml:lang="fr">Outil pour l'étude du japonais</summary>
+  <description>
+    <p xml:lang="de">Komport ist ein japanisches Referenz- und Studienprogramm. Es enthält ein Wörterbuch Englisch - Japanisch und Japanisch - Englisch und auch ein Kanji-Wörterbuch. Im Kanji-Wörterbuch gibt es mehrere Möglichkeiten, einzelne Buchstaben nachzuschlagen.</p>
+    <p xml:lang="en-GB">Komport is a Japanese reference and study tool. It features an English to Japanese and Japanese to English dictionary, as well as a Kanji dictionary. For the Kanji dictionary there are multiple ways supported to look up characters.</p>
+    <p xml:lang="fa">Komport on japanin hakuteos- ja opiskelutyökalu. Siinä on englanti–japani–englanti-sanakirja ja kanji-sanakirja. Merkkejä voi hakea kanjisanakirjasta monin tavoin.</p>
+    <p xml:lang="fr">Komport est un outil pour l'étude du japonais. Il comprend un dictionnaire anglais / japonais et japonais / anglais, ainsi qu'un dictionnaire de Kanji. Plusieurs façons de rechercher les caractères Kanji sont possibles.</p>
+  </description>
+  <url type="homepage">https://edu.kde.org/komport/</url>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=komport</url>
+  <url type="help">https://docs.kde.org/?application=komport</url>
+  <url type="donation">https://www.kde.org/community/donations/?app=komport&amp;source=appdata</url>
+  <screenshots>
+    <screenshot type="default">
+      <caption>Practicing Japanese dictionary with Komport</caption>
+      <caption xml:lang="de">Japanisch-Wörterbuch mit Komport</caption>
+      <caption xml:lang="en-GB">Practising Japanese dictionary with Komport</caption>
+	  <caption xml:lang="fa">Séance d'exercices sur un dictionnaire japonais grâce à Komport</caption>
+      <caption xml:lang="fr">Séance d'exercices sur un dictionnaire japonais grâce à Komport</caption>
+      <image>https://cdn.kde.org/screenshots/komport/komport.png</image>
+    </screenshot>
+  </screenshots>
+  <project_group>KDE</project_group>
+  <provides>
+    <binary>komport</binary>
+  </provides>
+  <releases>
+    <release version="0.1" date="2021-02-01"/>
+  </releases>
+  <content_rating type="oars-1.1"/>
+</component>

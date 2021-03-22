@@ -1,0 +1,12 @@
+# Code generation options for kconfig_compiler
+File=komport.kcfg
+ClassName=Settings
+NameSpace=Komport
+Singleton=true
+Mutators=true
+#Mutators=colorForeground
+Visibility=LIBKOMPORT_EXPORT
+IncludeFiles=libkomport_export.h
+# will create the necessary code for setting those variables
+TranslationSystem=kde
+TranslationDomain=komport

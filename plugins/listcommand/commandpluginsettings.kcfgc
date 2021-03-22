@@ -1,0 +1,8 @@
+# Code generation options for kconfig_compiler
+File=commandplugin.kcfg
+ClassName=commandPluginSettings
+Namespace=Komport
+Singleton=true
+Mutators=true
+#Mutators=colorBackground,colorForeground
+# will create the necessary code for setting those variables

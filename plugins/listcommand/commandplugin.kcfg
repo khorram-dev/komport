@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+      http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <kcfgfile name="komport_commandrc"/>
+  <group name="general">
+    <entry name="saveDir" type="String">
+		<label>Folder to save files</label>
+		<default code="true">QStandardPaths::writableLocation(QStandardPaths::ConfigLocation)+QStringLiteral("/listfiles")</default>
+    </entry>
+	<entry name="listview" type="int">
+		<label>Define List view</label>
+		<default>0</default>
+    </entry>
+	<entry name="lineedit" type="int">
+		<label>Define the number of characters</label>
+		<default>6</default>
+    </entry>
+  </group>
+</kcfg>

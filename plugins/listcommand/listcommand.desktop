@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=List Command
+Comment=Display the list command
+ServiceTypes=Komport/Plugin
+Type=Service
+X-KDE-Library=Komportcommandplugin
+X-KDE-PluginInfo-Name=CommandPlugin
+X-KDE-PluginInfo-Author=Masoud Khorram
+X-KDE-PluginInfo-Email=masoudkh62@gmail.com
+X-KDE-PluginInfo-Website=https://github.com/khorram-dev/komport
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
+Icon=view-sidetree

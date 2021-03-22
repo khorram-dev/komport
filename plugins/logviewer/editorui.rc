@@ -1,0 +1,32 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="editor" version="1"> <!-- increase version number if you don't see changes after experimenting with this file -->
+<MenuBar>
+  <Menu name="file" noMerge="1"><text>&amp;File</text>
+    <Action name="file_open" />
+    <DefineGroup name="save_merge" append="save_merge" />
+    <Separator/>
+    <DefineGroup name="revert_merge" append="revert_merge"/>
+    <DefineGroup name="print_merge" append="print_merge"/>
+    <Separator/>
+    <Action name="file_quit"/>
+  </Menu>
+  <Merge />
+</MenuBar>
+<ToolBar name="mainToolBar" noMerge="1"><text>Main Toolbar</text>
+  <Action name="file_open" />
+  <DefineGroup name="file_operations" />
+  <Separator />
+  <DefineGroup name="print_merge" />
+  <Separator />
+  <Action name="file_close" />
+  <Separator />
+  <DefineGroup name="edit_operations" />
+  <Separator />
+  <DefineGroup name="find_operations" />
+  <Separator />
+  <DefineGroup name="zoom_operations" />
+</ToolBar>
+<Menu name="ktexteditor_popup" noMerge="1">
+  <DefineGroup name="popup_operations" />
+</Menu>
+</kpartgui> 

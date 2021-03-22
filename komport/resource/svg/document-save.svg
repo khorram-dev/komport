@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 64 64"
+   width="512"
+   height="512"
+   version="1.1"
+   id="svg17"
+   sodipodi:docname="document-save.svg"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14">
+  <metadata
+     id="metadata23">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs21" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     id="namedview19"
+     showgrid="false"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="-73.932251"
+     inkscape:cy="165.40411"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg17" />
+  <path
+     inkscape:connector-curvature="0"
+     style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:2.66666675"
+     d="M 0,0 V 64 H 13.333335 50.666665 64 V 16 L 61.333331,13.333334 50.666665,2.6666663 47.999998,0 H 45.33333 16.000002 Z M 2.6666669,2.6666663 H 16.000002 V 23.999999 H 45.33333 V 2.6666663 h 1.562454 L 61.333289,17.104171 V 61.333333 H 50.666623 V 40 H 13.333335 V 61.333333 H 2.6666669 Z m 16.0000021,0 H 34.666671 V 21.333334 H 18.666669 Z M 16.000002,42.666666 H 47.999998 V 61.333333 H 16.000002 Z"
+     id="path60"
+     class="ColorScheme-Text" />
+</svg>

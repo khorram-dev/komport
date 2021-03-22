@@ -1,0 +1,40 @@
+<!DOCTYPE kpartgui SYSTEM "kpartgui.dtd">
+<kpartgui name="serialportActivity" version="1" translationMarkup="true" translationDomain="serialport">
+<MenuBar>
+	<Menu name="file"><text>&amp;File</text>
+	<Action name="ac_new" />
+	<Action name="ac_open" />
+	<Separator/>
+  </Menu>
+	<Menu name="Serialport"><text>Serialport</text>
+		<Action name="ac_connection"/>
+		<Action name="ac_rts"/>
+		<Action name="ac_dtr"/>
+		<Separator/>
+		<Action name="ac_newlineafter"/>
+		<Action name="ac_timestamp"/>
+        <Action name="ac_logfile"/>
+		<Separator/>
+		<Action name="ac_sendfile"/>
+		<Action name="ac_close"/>
+	</Menu>
+</MenuBar>
+<Menu name="ViewMenu"><text>View</text>
+	<Separator/>
+	<Menu name="ColumnsMenu">
+		<text>Configure Columns</text>
+		<title>Columns</title>
+		<ActionList name="view_columns_list" />
+	</Menu>
+	<Merge/>
+</Menu>
+<ToolBar name="SerialportToolBar" noMerge="1"><text>Serialport</text>
+	<Action name="ac_connection"/>
+	<Action name="ac_rts"/>
+	<Action name="ac_dtr"/>
+	<Action name="ac_timestamp"/>
+	<Action name="ac_logfile"/>
+	<Action name="ac_sendfile"/>
+	<Separator/>
+</ToolBar>
+</kpartgui>

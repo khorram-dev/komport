@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Log Viewer
+Comment=Displays the logging output
+ServiceTypes=Komport/Plugin
+Type=Service
+X-KDE-Library=Komportlogviewerplugin
+X-KDE-PluginInfo-Name=LogViewerPlugin
+X-KDE-PluginInfo-Author=Masoud Khorram
+X-KDE-PluginInfo-Email=masoudkh62@gmail.com
+X-KDE-PluginInfo-Website=https://github.com/khorram-dev/komport
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=false
+Icon=text-x-log

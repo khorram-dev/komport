@@ -1,0 +1,25 @@
+[Desktop Entry]
+Name=Komport
+Name[de]=Komport
+Name[en_GB]=Komport
+Name[fa]=Komport
+Name[fr]=Komport
+GenericName=Komport
+GenericName[de]=Komport
+GenericName[en_GB]=Komport
+GenericName[fa]=Komport
+GenericName[fr]=Komport
+Exec=komport %U
+Icon=komport
+Type=Application
+X-DocPath=komport/index.html
+MimeType=application/x-komport;application/x-komport;x-scheme-handler/magnet;
+X-DBUS-StartupType=Unique
+X-DBUS-ServiceName=org.kde.komport
+Comment=A Komport program by KDE
+Comment[de]=Ein Komport-Programm von KDE
+Comment[en_GB]=A Komport program by KDE
+Comment[fa]=KDE:n Komport-ohjelma
+Comment[fr]=Un programme Komport par KDE
+Terminal=false
+Categories=Qt;KDE;Network;FileTransfer;P2P;
