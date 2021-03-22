@@ -44,5 +44,5 @@ x86_64-w64-mingw32-make install DESTDIR=path-output
 
 ### Screenshot
 
-![Screenshots](komport.png)
+![Screenshots](https://github.com/khorram-dev/komport/blob/master/doc/screenshot_1.png)
 
