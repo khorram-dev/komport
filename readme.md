@@ -17,7 +17,7 @@ This program monitors, displays, logs and analyzes all serial ports, including R
 
 ### Build instructions
 
-Linux
+**Linux
 
 cmake . -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF
 
@@ -26,7 +26,7 @@ make -j4
 make install
 
 
-Mingw
+**Mingw
 
 x86_64-w64-mingw32-cmake . -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=OFF
 
@@ -41,6 +41,7 @@ x86_64-w64-mingw32-make install DESTDIR=path-output
 *   on linux look for the qt5 development packages including QSerialport
 *   Since C++C11 features are used a gcc supporting these is needed too
 
+[![pipeline status](https://github.com/khorram-dev/komport/blob/master/komport/resource/png/btn_donate_LG.webp)](https://www.paypal.com/donate?hosted_button_id=VG6P3S4ELVXJ2)
 
 ### Screenshot
 
