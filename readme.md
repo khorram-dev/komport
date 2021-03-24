@@ -5,7 +5,7 @@
 Komport is a graphical serialport and socket terminal
 And is a tool for monitoring system serial ports.
 This program monitors, displays, logs and analyzes all serial ports, including RS232/422/485.
-
+[![pipeline status](https://github.com/khorram-dev/komport/blob/master/komport/resource/png/btn_donate_LG.webp)](https://www.paypal.com/donate?hosted_button_id=VG6P3S4ELVXJ2)
 
 ### Features:
 
@@ -37,7 +37,11 @@ Mingw
 *   the qt5 development packages including QSerialport
 *   Since C++C11 features are used a gcc supporting these is needed too
 
-[![pipeline status](https://github.com/khorram-dev/komport/blob/master/komport/resource/png/btn_donate_LG.webp)](https://www.paypal.com/donate?hosted_button_id=VG6P3S4ELVXJ2)
+#### Release for windows 64bit
+https://github.com/khorram-dev/komport/releases
+
+#### for Arch Linux
+https://gist.github.com/khorram-dev/faa4059104b1bfb85aa16ffe8c17e7f9
 
 ### Screenshot
 
