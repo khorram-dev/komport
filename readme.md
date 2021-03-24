@@ -5,6 +5,7 @@
 Komport is a graphical serialport and socket terminal
 And is a tool for monitoring system serial ports.
 This program monitors, displays, logs and analyzes all serial ports, including RS232/422/485.
+
 [![pipeline status](https://github.com/khorram-dev/komport/blob/master/komport/resource/png/btn_donate_LG.webp)](https://www.paypal.com/donate?hosted_button_id=VG6P3S4ELVXJ2)
 
 ### Features:
