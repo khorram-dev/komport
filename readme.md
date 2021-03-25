@@ -42,7 +42,15 @@ Mingw
 https://github.com/khorram-dev/komport/releases
 
 #### for Arch Linux
-https://gist.github.com/khorram-dev/faa4059104b1bfb85aa16ffe8c17e7f9
+
+/etc/pacman.d/mirrorlist
+Server = https://khorram-dev.github.io/$repo/$arch
+
+/etc/pacman.conf
+[arch-repo]
+SigLevel = Optional TrustedOnly
+Server = https://khorram-dev.github.io/$repo/$arch
+
 
 ### Screenshot
 
