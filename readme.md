@@ -44,11 +44,15 @@ https://github.com/khorram-dev/komport/releases
 #### for Arch Linux
 
 /etc/pacman.d/mirrorlist
+
 Server = https://khorram-dev.github.io/$repo/$arch
 
 /etc/pacman.conf
+
 [arch-repo]
+
 SigLevel = Optional TrustedOnly
+
 Server = https://khorram-dev.github.io/$repo/$arch
 
 
