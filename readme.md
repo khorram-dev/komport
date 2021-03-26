@@ -34,7 +34,7 @@ Mingw
 
 #### Requirements for Building:
 
-*   kde >= 5.15, Qt >= 5.4, CMake >= 3
+*   kde >= 5.70, Qt >= 5.12, CMake >= 3
 *   the qt5 development packages including QSerialport
 *   Since C++C11 features are used a gcc supporting these is needed too
 
