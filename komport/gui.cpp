@@ -452,7 +452,14 @@ void GUI::donation()
 void GUI::handBook()
 {
     QString link = QApplication::applicationDirPath()+"/data/doc/HTML/en/komport/index.html";
-    QDesktopServices::openUrl(QUrl(link));
+    bool blink = QDesktopServices::openUrl(QUrl::fromLocalFile(link));
+    if(!blink) {
+        QMessageBox msg;
+        msg.setText("The path was not found:\n"+
+                    QApplication::applicationDirPath()+
+                    "/data/doc/HTML/en/komport/index.html");
+        msg.exec();
+    }
 }
 
 }
